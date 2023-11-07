@@ -2,7 +2,12 @@ package shop;
 
 import java.util.List;
 
-public class Receipt {
+public interface receiptTemp {
+    float amount();
+    int getRegisterNum();
+    Customer getCustomer();
+}
+public class Receipt implements receiptTemp {
     private List<Item> items;
     private Customer customer;
     private Cashier cashier;

@@ -2,7 +2,13 @@ package shop;
 
 import java.util.List;
 
-public class Shop {
+
+public interface shopTemp {
+    List<Supplier> getSuppliers();
+    List<LoyalCard> getLoyaltyCards();
+    void resign(Cashier x);
+}
+public class Shop implements shopTemp {
     private List<Cashier> employees;
     private List<LoyalCustomer> loyalCustomers;
     private List<LoyalCard> loyaltyCards;

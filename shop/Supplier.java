@@ -12,7 +12,7 @@ public class Supplier {
         Name = name;
     }
 
-    public String getLocation() {
+    final String getLocation() {
         return Location;
     }
 

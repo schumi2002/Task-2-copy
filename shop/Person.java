@@ -3,7 +3,13 @@ package shop;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Person {
+
+public interface personTemp {
+    String getName();
+    void setName(String name);
+    LocalDate getDOB();
+}
+public class Person implements personTemp {
     private String Name;
     private LocalDate DOB;
 

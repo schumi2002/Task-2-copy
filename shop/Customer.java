@@ -1,5 +1,11 @@
 package shop;
 
+public interface customerTemp {
+    int getCID();
+    void setCID(int CID);
+
+}
+
 public class Customer extends Person {
 
     private int CID;

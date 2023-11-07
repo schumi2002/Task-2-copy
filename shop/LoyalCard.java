@@ -51,7 +51,7 @@ public class LoyalCard {
         return "Name: " + Name + ", Points: " + points + ", Expiration: " + expiration;
     }
 
-    public int rewardsValue() {
+    final int rewardsValue() {
         return points/100;
     }
 }

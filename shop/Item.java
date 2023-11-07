@@ -1,5 +1,11 @@
 package shop;
 
+public interface itemTemp {
+    String getCategory();
+    Supplier getSupplier();
+    void setPrice(float price);
+}
+
 public class Item {
     private int ItemID;
     private float price;
